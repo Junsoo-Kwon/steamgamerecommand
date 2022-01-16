@@ -1,0 +1,27 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /api/
+    
+    
+spring:
+ resources:
+   static-locations: classpath:/
+  
+---
+
+spring:
+ data:
+  mongodb:
+    authentication-database: admin
+    username: SSAFYMONGO
+    password: ssafyadmin1234
+    database: sgr
+    port: 27017
+    host: j3b305.p.ssafy.io
+---
+
+spring:
+  autoconfigure:
+    exclude:
+    - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration

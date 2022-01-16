@@ -29,8 +29,8 @@ import os
 # In[100]:
 
 
-input_file = r'C:\SSAFY\bigdata\gamedata' # csv파일들이 있는 디렉토리 위치
-output_file = r'C:\SSAFY\bigdata\gamedata\steamgame.csv' # 병합하고 저장하려는 파일명
+input_file = r'C:\bigdata\gamedata' # csv파일들이 있는 디렉토리 위치
+output_file = r'C:\bigdata\gamedata\steamgame.csv' # 병합하고 저장하려는 파일명
 
 allFile_list = glob.glob(os.path.join(input_file, 'onlyapp_*')) # glob함수로 sales_로 시작하는 파일들을 모은다
 print(allFile_list)
@@ -47,7 +47,7 @@ dataCombine.to_csv(output_file, index=False) # to_csv함수로 저장한다. 인
 # In[101]:
 
 
-md = pd.read_csv('C:/SSAFY/bigdata/gamedata/steamgame.csv')
+md = pd.read_csv('C:/bigdata/gamedata/steamgame.csv')
 md.head()
 
 

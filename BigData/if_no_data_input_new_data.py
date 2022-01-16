@@ -7,7 +7,7 @@ import json
 # In[2]:
 
 
-db = MongoClient("mongodb://SSAFYMONGO:ssafyadmin1234@j3b305.p.ssafy.io:27017/?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false")
+db = MongoClient("mongodb://")
 db_sgr_gameinfo = db['sgr']['gameinfo']
 
 

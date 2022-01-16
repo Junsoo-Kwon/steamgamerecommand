@@ -13,7 +13,7 @@ from bson.json_util import dumps
 from bs4 import BeautifulSoup
 
 
-db = MongoClient("mongodb://SSAFYMONGO:ssafyadmin1234@j3b305.p.ssafy.io:27017/?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false")
+db = MongoClient("mongodb://")
 
 def load_mongodb(collectionname):
     md = pd.DataFrame(list(db['sgr'][collectionname].find()))
@@ -149,7 +149,7 @@ def gamecheck(gameid, data):
 
 
 def get_survey_game_list(userid):
-    db = MongoClient("mongodb://SSAFYMONGO:ssafyadmin1234@j3b305.p.ssafy.io:27017/?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false")
+    db = MongoClient("mongodb://")
     userinfo = list(db['sgr']['users'].find({'_id':userid}, {'survey_game_id' : 1}))
     survey_game_list = userinfo[0]['survey_game_id']
     return survey_game_list

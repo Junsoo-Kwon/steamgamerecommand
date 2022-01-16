@@ -1,0 +1,24 @@
+.left_arrow {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  & > svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.right_arrow {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  & > svg {
+    width: 25px;
+    height: 25px;
+  }
+}

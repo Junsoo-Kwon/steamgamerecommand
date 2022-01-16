@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  background: rgb(27, 40, 56);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* alert css */
+
+.swal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.swal-button {
+  padding: 11px 19px;
+  border-radius: 2px;
+  background-color: #4962b3;
+  font-size: 18px;
+  border: 1px solid #3e549a;
+}
+
+.swal-modal {
+  background-color: rgb(29 39 66);
+}
+
+.swal-text {
+  padding: 17px;
+  display: block;
+  margin: 22px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: #5f72b1;
+}
